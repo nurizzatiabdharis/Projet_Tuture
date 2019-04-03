@@ -1,0 +1,75 @@
+jQuery(function($){
+	import{lien1};
+	var lien2=0;
+	var lien3=0;
+	var lien4=0;
+	$('.lien').hide();
+	<?php if(isset($reponse)):?>
+		$('#block1').show();
+	<?php endif;?>
+	$('#link1').click(function(){
+		lien1++;
+		lien2=0;
+		lien3=0;
+		lien4=0;
+		$('#block2').hide();
+		$('#block3').hide();
+		$('#block4').hide();
+		$('#block1').slideDown();
+		if(lien1%2==0){
+			$('#block1').slideUp();
+		}
+		else
+		{
+			$('#block1').slideDown();
+		}
+	});
+	$('#link2').click(function(){
+		lien1=0;
+		lien2++;
+		lien3=0;
+		lien4=0;
+		$('#block1').hide();
+		$('#block3').hide();
+		$('#block4').hide();
+		if(lien2%2==0){
+			$('#block2').slideUp();
+		}
+		else
+		{
+			$('#block2').slideDown();
+		}
+	});
+	$('#link3').click(function(){
+		lien1=0;
+		lien2=0;
+		lien3++;
+		lien4=0;
+		$('#block1').hide();
+		$('#block2').hide();
+		$('#block4').hide();
+		if(lien3%2==0){
+			$('#block3').slideUp();
+		}
+		else
+		{
+			$('#block3').slideDown();
+		}
+	});
+	$('#link4').click(function(){
+		lien1=0;
+		lien2=0;
+		lien3=0;
+		lien4++;
+		$('#block1').hide();
+		$('#block2').hide();
+		$('#block3').hide();
+		if(lien4%2==0){
+			$('#block4').slideUp();
+		}
+		else
+		{
+			$('#block4').slideDown();
+		}
+	});
+});

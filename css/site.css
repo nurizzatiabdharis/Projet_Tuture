@@ -1,0 +1,493 @@
+html{
+	/*contient le fond de la page*/
+	background-image: url("../img/cover.jpg");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.maxWidth{ /*classe visant a mettre un bloc à la longueur 100%*/
+	width: 100%;
+}
+.inline { /*classe qui vise à mettre des blocs sur la même ligne*/
+	display: flex;
+}
+.right { /* classe qui dispose le contenu d'un bloc à droite */
+	text-align: right;
+}
+.clear{
+	clear:both;
+}
+ 
+.col-1 {
+  float:left;
+  width:20%;
+  text-align:center;
+  padding:0 30px 20px 100px;
+}
+
+.col-2 {
+  float:left;
+  width:60%;
+  padding:0 20px 20px 50px;
+}
+
+#main {
+	float:center;
+	padding: 1% 10% 1% 10%;
+}
+
+/*-------------------------------------------traitement des images-------------------------------------------*/
+img#deconnex{
+	min-width: 20px;
+	min-height: 20px;
+	max-width: 50px;
+	max-height: 50px;
+
+}
+div#deco{
+	position: fixed;
+	right:1%;
+	top:1%;
+}
+table#forme{
+	margin:auto;/*le tableau sera au centre meme si on change la valeur de width*/
+	width:100%;
+}
+
+table#forme tr#logo td div{
+	margin:auto;
+	text-align: center; /*centrer l'image à l'aide d'un div*/
+	width:60%;
+}
+table#header{
+	width: 100%;
+}
+table#header td{
+	text-align:center;
+	width: 14%;
+	padding: 1% 2% 1% 2%;
+}
+table#header tr#line_acces{
+	display: none;
+}
+table#profil{
+	width:100%;
+	border-collapse:collapse;
+}
+table#profil tr td {
+	border:3px solid black;
+	height:30px;
+}
+table#profil tr td.photo{
+	width:30px;
+}
+table#profil tr td#level{
+	width:100px;
+}
+div.container{
+	width:100%;
+	background-color:grey;
+}
+div#corps{
+	width: 80%;
+	height: auto;
+	background-color: white;
+	margin:auto;
+	border-collapse:collapse;
+	padding-top: 3px;
+	padding-right: 4%;
+	padding-left: 4%;
+	padding-bottom:1%;
+}
+div#corps table{
+	border-collapse: collapse;
+	margin: auto;
+	border:1px solid black;
+	text-align: center;
+}
+div#corps table td, div#corps table th {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding:4px 10px 4px 10px;
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: left;
+}
+h2#intro{
+	border-bottom: 4px solid blue;
+    background-color: lightgrey;
+	width: 100%;
+}
+figcaption{
+	text: bold;
+}
+
+#labSearch{
+	padding: 5px 0 5px 0;
+}
+div.centre{
+	text-align: center;
+	margin: auto;
+}
+table.portrait{
+	width: 100%;
+}
+div.bottom-container{
+	margin:0;
+	padding: 0;
+	background-color: #41B235;
+	position: fixed;
+	z-index:99;
+	bottom: 0;
+	left:0;
+}
+div.bottom-container p{
+	color:black;
+}
+div.bottom-container div{
+	width : 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto;
+}
+/*------------------------------------------- fin les boutons radios -------------------------------------------*/
+/*-------------------------------------------configuration des boutons de direction-------------------------------------------*/
+button.menu{
+	width: 100%;
+	height: 30px;
+	-webkit-border-radius: 14;
+	-moz-border-radius: 14;
+	border-radius: 14px;
+	font-size: 15px;
+	text-shadow: 3px 2px 5px #0a090a;
+	padding: 5% 1% 12% 1%;
+	text-decoration: none;
+}
+
+button#vocab{
+	color: #fafafa;
+	background: #27a6c2;
+	padding: 5% 1% 12% 1%;
+	border: solid #228ba8 2px;
+}
+button#vocab:hover{
+	background: #29d0e3;
+  	text-decoration: none;
+}
+button#ex{
+	color: #fafafa;
+	background: #bd9f31;
+	border: solid #997929 2px;
+}
+button#ex:hover{
+	background: #e3b024;
+  	text-decoration: none;
+}
+button#eval{
+	color: #fafafa;
+	background: #b31919;
+	border: solid #7a0f0f 2px;
+}
+button#eval:hover{
+	background: #e82e2e;
+  	text-decoration: none;
+}
+button#forum{
+	color: #fafafa;
+	background: #d42689;
+	border: solid #b02985 2px;
+}
+button#forum:hover{
+	background: #f238b7;
+  	text-decoration: none;
+}
+button#perso{
+	color: #fafafa;
+	background: #8323ad;
+	border: solid #4718ad 2px;
+}
+button#perso:hover{
+	background: #a130f2;
+  	text-decoration: none;
+}
+button#mal{
+	color: #fbff00;
+	background: #315aa6;
+	border: solid #0f3994 2px;
+}
+button#mal:hover{
+	background: #2c70de;
+  	text-decoration: none;
+}
+button#gram{
+	color: #fafafa;
+	background: #26ab3e;
+	border: solid #148735 2px;
+}
+button#gram:hover{
+	background: #1dcf4a;
+  	text-decoration: none;
+}
+/*------------------------------------------- fin configuration des boutons de direction-------------------------------------------*/
+/*------------------------------------------- menu deroulant grammaire -------------------------------------------*/
+ul.dropdown {
+	width:100%;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index:3;
+	background-color: #f9f9f9; /*couleur de fond du sous-menu*/
+	overflow: auto;
+	box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+	color: black;
+	padding: 10px 10px;  /*marge interieur du sous-menu*/
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content li{
+	list-style-type: none;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+/*------------------------------------------- fin menu deroulant grammaire -------------------------------------------*/
+/*------------------------------------------- mise en forme des boutons du menu -------------------------------------------*/
+/*-------------------------------------------mise en forme des exos-------------------------------------------*/
+.formexo{
+	border: 1px solid black;
+}
+/*-------------------------------------------forum-------------------------------------------*/
+table#fastlink{
+	border-collapse: collapse;
+	border:3px solid black;
+	background-color: 	#48D1CC;
+	font-size: 20px;
+}
+
+table#fastlink th{
+	border:3px solid black;
+	width: 25%;
+}
+
+table#fastlink a{
+	text-decoration: none;
+	color: black;
+}
+tr#userforum {
+	background:lightblue;
+}
+/*---------------Cours-----------------*/
+table#cours {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+table#cours td, #cours th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table#cours tr:nth-child(even){background-color: #f2f2f2;}
+
+table#cours tr:hover {background-color: #ddd;}
+
+#cours th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4682B4;
+    color: black;
+}
+
+/*----------------------------------------Exercice--------------------*/
+#note{
+	font-size: 20px;
+	color: blue;
+}
+
+.dropbtn {
+    background-color: 	#008000;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3CB371;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+background-color: #3CB371
+}
+
+.show {display:block;}
+
+/*----------------------------------evaluation-------------------------------------------*/
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#exoeva {
+	background-color: #ADD8E6;
+    color: black;
+    border: 1px solid #00008B;
+	border-radius: 8px;
+	padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+footer{
+	margin:auto;
+	margin-top : 20px;
+	width:70%;
+	text-align:center;
+}
+footer div{
+	padding : 5px 5px 5px 5px;
+	background-color:white;
+	font-style: oblique;
+	border : 8px ridge #F2B35A;
+	border-radius: 10px;
+}
+footer div ul{
+	list-style: none;
+}
+/*----------------------------------version mobile-------------------------------------------*/
+
+@media only screen and (max-width:600px) {
+  /* For mobile phones: */
+	.col-1, .col-2 {
+		width:100%;
+	}	
+	/*gestion de la navigation dans le cas de la version mobile*/
+  	table#header{
+  		height: 100%;
+	  	width: 20%;
+	  	position: fixed;
+	  	z-index:999;
+	  	top:0;
+	  	left:0;
+  	}
+	table#header td{
+		display: table-row;
+	}
+ 	table#header tr{
+		display: table-cell;
+	}
+	table#header tr#access_site{
+		background-color: rgba(255,255,255,0.5);
+	}
+  	table#header tr#line_acces{
+		display: block;
+	}
+	/*fin gestion de la navigation dans le cas de la version mobile*/
+	div#corps{
+		width: 90%;
+	}
+  	table#cours{
+		width:100%;
+ 	}
+  	table.portrait{
+		width: 100%;
+	}
+	img, iframe {
+		width: 100%;
+		height:100%;
+	}
+	
+	button.menu{
+		width: 100%;
+	}
+}
+
+/*commandes mises de coté*/
+/*opacity: 0.5;/*jouer sur la transparence*/
+/*display:table-row; /*mettre des éléments d'un tableau d'une seule ligne comme plusieurs lignes*/
+/*@media(max-width:800px){
+	table#header{
+		width:25%;
+		position: fixed;
+		left:0;
+	}
+	table#header td{
+	width: 100%;
+	margin: 3% 1% 1% 1%;
+	display: block;
+}*/

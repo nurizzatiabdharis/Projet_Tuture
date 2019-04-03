@@ -1,0 +1,200 @@
+/*CSS pour la page d'accueil*/
+/*disposition des redirections*/
+div.inline{
+	margin: auto;
+	width:90%;
+	display:flex;
+}
+div.inline div{
+	margin : 1% 1% 1% 1%;
+	padding : 1% 1% 1% 1%;
+}
+div.commentaire{
+	background-color:white;
+	width: 60%;
+	padding : 1% 1% 1% 1%;
+}
+/*partie accueil*/
+table#accueil{
+	width:300px;
+}
+table#accueil tr td button{
+	height:50px;
+}
+button#acmal{
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fbff00;
+	font-size: 15px;
+	background: #315aa6;
+	border: solid #0f3994 2px;
+	text-decoration: none;
+}
+button#acmal:hover{
+	background: #2c70de;
+  	text-decoration: none;
+}
+button#acgram{	
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	font-size: 15px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fafafa;
+	background: #26ab3e;
+	border: solid #148735 2px;
+	text-decoration: none;
+}
+button#acgram:hover{
+	background: #1dcf4a;
+  	text-decoration: none;
+}
+button#acvocab{
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	font-size: 15px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fafafa;
+	background: #27a6c2;
+	border: solid #228ba8 4px;
+	text-decoration: none;
+}
+button#acvocab:hover{
+	background: #29d0e3;
+  	text-decoration: none;
+}
+button#acex{
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fafafa;
+	font-size: 15px;
+	background: #bd9f31;	
+	border: solid #997929 2px;
+	text-decoration: none;
+}
+button#acex:hover{
+	background: #e3b024;
+  	text-decoration: none;
+}
+button#aceval{
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fafafa;
+	font-size: 15px;
+	background: #b31919;	
+	border: solid #7a0f0f 2px;
+	text-decoration: none;
+}
+button#aceval:hover{
+	background: #e82e2e;
+  	text-decoration: none;
+}
+button#acforum{
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	text-shadow: 3px 2px 5px #0a090a;
+	color: #fafafa;
+	font-size: 15px;
+	background: #8323ad;
+	border: solid #4718ad 2px;
+	text-decoration: none;
+}
+button#acforum:hover{
+	background: #a130f2;
+  	tacext-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    button#acforum {width: 100%;}
+}
+
+/*partie connexion/inscription*/
+button#co{
+	width:400px;
+	height:50px;
+}
+button#ins{
+	width:400px;
+	height:50px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	background: #ADD8E6;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, select:focus{
+    background-color: #F5F5F5;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+	font-weight: bold;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+button#btninfo {
+    background-color: #4682B4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+button#btninfo:hover {
+    background-color:	#191970 ;
+}
+
+/*disposition des formulaires*/
+div#form{
+	margin:auto;
+	width: 70%;
+}
+div#formIns, div#formCo, div#formUns{
+	background-color: white;
+	padding: 2% 2% 2% 5%;
+	border-radius: 10px;
+}
+
+
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  div.commentaire{
+    width:100%;
+  }
+  
+}

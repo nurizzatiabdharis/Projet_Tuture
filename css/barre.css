@@ -1,0 +1,17 @@
+table{
+	width:100%;
+	border-collapse:collapse;
+	border:1px solid black;
+	color:white;
+	text-align:right;
+}
+td{
+	border:1px solid black;	
+}
+td#accompli{
+	width:75%;
+	background-color:green;
+}
+td#manquant{
+	background-color:grey;
+}
